@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benvenuto</title>
+</head>
+<body>
+
+    <div id="miaapp">
+        <h1>{{welcomeMessage}}</h1>
+        <h2>{{loginMessage}}{{nome}} {{cognome}}</h2>
+
+        <label for="name">Nome</label>
+        <input v-model="nome" @keyDown="printMessage" name='name'>
+        <label for="name">Cognome</label>
+        <input v-model="cognome" name='surname'>
+
+        <img v-bind:src="imgUrl" alt="">
+
+        <button></button>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
